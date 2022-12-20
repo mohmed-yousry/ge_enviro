@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="content"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="bg-[#F5F5F5]"> <script  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <nav class="fixed top-0 h-[65px] w-full bg-white z-50" style=" box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);">
+      <div class="container h-full">
+        <div class="content flex items-center justify-between h-full">
+          <div class="logo w-[70px] maxmd:order-1"><img src="img/logo3.svg" alt="alt"></div>
+          <div class="links w-[40%] ">
+            <ul class="links-parint"> 
+              <div class="hidden overlay w-full h-full bg-black/20 z-[-1] fixed left-0 top-0"></div>
+              <div class="md:hidden flex items-center justify-between w-full mb-8">
+                <div class="close-menue"><i class="fa-solid fa-xmark text-2xl cursor-pointer"></i></div>
+                <div class="logo max-w-[90px]"><a href="index.html"><img src="img/Logo.svg" alt="alt"></a></div>
+              </div>
+              <li class="h-full maxlg:h-auto maxmd:w-full maxmd:mb-8 flex items-center"><a class="nav-link " href="index.html">الصفحة الرئيسية</a> </li>
+              <li class="h-full maxmd:h-auto maxmd:w-full maxmd:mb-8 flex items-center"><a class="nav-link" href="about.html">عن المشروع</a> </li>
+              <li class="h-full maxmd:h-auto maxmd:w-full maxmd:mb-8 flex items-center"><a class="nav-link" href="contactus.html">تواصل معنا</a> </li>
+              <li class="w-full text-center md:hidden"><a class="btn py-1  w-full block bg-mainColor text-white hover:bg-[#072C4C] border-mainColor border " href="Registration.html">تسجيل جديد</a></li>
+              <li class="w-full text-center md:hidden my-6"><a class="btn py-1  w-full block  hover:text-white hover:bg-mainColor border-mainColor border " href="signUp.html">دخول </a></li><a class="btn py-2 flex justify-center md:hidden   w-full   hover:text-white hover:bg-mainColor border-mainColor border" href=""> <span class="uppercase leading-3">en <i class="fa-solid fa-globe"></i> </span> </a>
+            </ul>
+          </div>
+          <div class="login flex maxmd:hidden items-center h-full"><a class="uppercase text-mainColor rtl:ml-6 ltr:mr-6 font-bold" href=""> en <i class="fa-solid fa-globe"></i></a>
+            <div class="active-nav relative h-full flex items-center"><a class="w-8 h-8 flex items-center justify-center rounded-full border  border-mainColor duration-200 group hover:bg-mainColor hover:text-white" href="chart.html"><i class="fa-regular fa-user"></i></a></div><a class="btn py-2 px-5 border-mainColor border rtl:mr-5 ltr:ml-5 text-mainColor hover:bg-mainColor hover:text-white" href="index.html"> تسجيل الخروج</a>
+          </div>
+          <div class="togle maxmd:block hidden maxmd:order-[-1]"><i class="fa-solid fa-bars text-2xl cursor-pointer text-mainColor"></i></div>
+        </div>
+      </div>
+    </nav>
+    <section class="mt-40 filter-nav"> 
+      <div class="container">
+        <div class="bg-white nav-taps rounded-2xl">
+          <div class="flex items-center justify-between maxmd:flex-col">
+            <button class="text-[#333333]/60 bg-[#F8F8F8] text-center font-bold button-teb  text-sm active-nav-taps py-4 w-full" tep="tep1"> بيانات الشركة أو المؤسسة</button>
+            <button class="text-[#333333]/60 bg-[#F8F8F8] text-center font-bold button-teb  text-sm py-4 w-full" tep="tep2">بيانات الشخص المسؤول</button>
+            <button class="text-[#333333]/60 bg-[#F8F8F8] text-center font-bold button-teb  text-sm py-4 w-full" tep="tep3"> الأسطول والمعدات</button>
+            <button class="text-[#333333]/60 bg-[#F8F8F8] text-center font-bold button-teb  text-sm py-4 w-full" tep="tep4"> الرصيد</button>
+          </div>
+          <div class="content px-10 py-14 ">
+            <div class="tep1 hidden active-teb-content" terget="tep1">
+              <form action="">
+                <div class="col">
+                  <label class="block text-mainColor text-lg font-medium mb-2" for="company-name">اسم الشركة أو المؤسسة    </label>
+                  <input class="input-login text-[#072C4C]" type="text" id="company-name" placeholder="اسم الشركة أو المؤسسة" value="سابك للمغذيات الزراعية">
+                </div>
+                <div class="col mt-6">
+                  <label class="block text-mainColor text-lg font-medium mb-2" for="number-history">رقم السجل التجاري </label>
+                  <input class="input-login text-[#072C4C]" type="text" id="number-history" placeholder="رقم السجل التجاري" value="2348654315214">
+                </div>
+                <div class="col mt-6 flex justify-between items-center maxmd:flex-col">
+                  <div class="email w-[48%] maxmd:w-full">
+                    <label class="block text-mainColor text-lg font-medium mb-3" for="email-input">البريد الالكترونى</label>
+                    <input class="input-login text-[#072C4C]" type="email" id="email-input" placeholder="البريد الالكترونى" value="info@sabkagre.com">
+                  </div>
+                  <div class="phone-number w-[48%] maxmd:w-full maxmd:mt-6">
+                    <label class="block text-mainColor text-lg font-medium mb-3" for="phone-input">رقم الجوال </label>
+                    <input class="input-login text-[#072C4C]" texttype="number" id="phone-input" placeholder="رقم الجوال " value="0990851564355525">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tep2 hidden" terget="tep2">
+              <div class="col"> 
+                <div class="flex justify-between items-center maxmd:flex-col">
+                  <div class="email w-[48%] maxmd:w-full">
+                    <label class="block text-mainColor text-lg font-medium mb-3" for="first-name">الإسم الأول</label>
+                    <input class="input-login" type="text" id="first-name" placeholder="الإسم الأول" value="فهد">
+                  </div>
+                  <div class="phone-number w-[48%] maxmd:w-full maxmd:mt-6">
+                    <label class="block text-mainColor text-lg font-medium mb-3" for="last-name">الإسم الثاني </label>
+                    <input class="input-login" type="text" id="last-name" placeholder="الإسم الثاني " value="سلمان">
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-6 ">
+                <label class="block text-mainColor text-lg font-medium mb-3" for="input-addriss" value="العنوان">العنوان   </label>
+                <textarea class="input-login " id="input-addriss" placeholder="العنوان" style="max-height: 200px; "></textarea>
+              </div>
+              <div class="col mt-6 flex justify-between items-center maxmd:flex-col">
+                <div class="email w-[48%] maxmd:w-full">
+                  <label class="block text-mainColor text-lg font-medium mb-3" for="password">كلمة المرور</label>
+                  <div class="relative">
+                    <input class="input-login" type="password" id="password" placeholder="كلمة المرور" value="45675673654132"><i class="absolute top-1/2 -translate-y-1/2 rtl:left-5 ltr:right-5 fa-regular fa-eye-slash text-[#cccccc]"></i>
+                  </div>
+                </div>
+                <div class="phone-number w-[48%] maxmd:w-full maxmd:mt-6">
+                  <label class="block text-mainColor text-lg font-medium mb-3" for="password-re">تأكيد كلمة المرور </label>
+                  <div class="relative">
+                    <input class="input-login" type="password" id="password-re" placeholder="تأكيد كلمة المرور "><i class="absolute top-1/2 -translate-y-1/2 rtl:left-5 ltr:right-5 fa-regular fa-eye-slash text-[#cccccc]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tep3 hidden" terget="tep3">
+              <button class="bg-[#005380] text-white flex items-center justify-center py-2 px-7 rtl:mr-auto ltr:ml-auto font-bold text-sm duration-300 rounded hover:bg-transparent hover:text-mainColor border border-mainColor"> <span>إضافة معدة جديدة</span> <i class="fa-solid fa-plus rtl:mr-3 ltr:ml-3"></i></button>
+              <div class="taple-parint overflow-x-auto mt-4">
+                <table class="w-full border-r border-l border-[#87AEC3] px-6"> 
+                  <thead class="bg-[#00538078]  text-white font-bold text-lg"> 
+                    <th class="py-3 text-center whitespace-nowrap  rtl:rounded-r  ltr:rounded-l">نوع المعدة</th>
+                    <th class="py-3 text-center whitespace-nowrap ">رقم المعدة</th>
+                    <th class="py-3 text-center whitespace-nowrap  rtl:rounded-l  ltr:rounded-r">خيارات </th>
+                  </thead>
+                  <tbody class="text-[#275482]"> 
+                    <tr class="border-b border-[#87AEC3] text-center"> 
+                      <td class="py-3 whitespace-nowrap">سيارة نقل</td>
+                      <td class="py-3 whitespace-nowrap">1313131</td>
+                      <td class="p-3 whitespace-nowrap flex items-center justify-center"> 
+                        <div class="flex items-center justify-between w-[110px]"><i class="cursor-pointer fa-regular fa-eye"></i>
+<i class="cursor-pointer fa-solid fa-pen mx-4"></i>
+<i class="cursor-pointer fa-regular fa-trash-can"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b border-[#87AEC3] text-center"> 
+                      <td class="py-3 whitespace-nowrap">جرار</td>
+                      <td class="py-3 whitespace-nowrap">55551</td>
+                      <td class="p-3 whitespace-nowrap flex items-center justify-center"> 
+                        <div class="flex items-center justify-between w-[110px]"><i class="cursor-pointer fa-regular fa-eye"></i>
+<i class="cursor-pointer fa-solid fa-pen mx-4"></i>
+<i class="cursor-pointer fa-regular fa-trash-can"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b border-[#87AEC3] text-center"> 
+                      <td class="py-3 whitespace-nowrap">آلة التحميل</td>
+                      <td class="py-3 whitespace-nowrap">458685</td>
+                      <td class="p-3 whitespace-nowrap flex items-center justify-center"> 
+                        <div class="flex items-center justify-between w-[110px]"><i class="cursor-pointer fa-regular fa-eye"></i>
+<i class="cursor-pointer fa-solid fa-pen mx-4"></i>
+<i class="cursor-pointer fa-regular fa-trash-can"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b border-[#87AEC3] text-center"> 
+                      <td class="py-3 whitespace-nowrap">شاحنة تفريغ</td>
+                      <td class="py-3 whitespace-nowrap">136548</td>
+                      <td class="p-3 whitespace-nowrap flex items-center justify-center"> 
+                        <div class="flex items-center justify-between w-[110px]"><i class="cursor-pointer fa-regular fa-eye"></i>
+<i class="cursor-pointer fa-solid fa-pen mx-4"></i>
+<i class="cursor-pointer fa-regular fa-trash-can"></i>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tep4 hidden" terget="tep4">tep4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="mt-20 bg-white py-16">
+      <div class="container"> 
+        <div class="content">
+          <div class="top flex items-center min-h-[220px] maxmd:flex-col border-b border-mainColor pb-7 mb-8">
+            <div class="logo maxmd:mb-6"><img class="h-full w-full" src="img/Logo2.svg" alt="alt"></div>
+            <div class="grow flex justify-between maxmd:flex-col">
+              <div class="links min-h-[220px] rtl:mr-16 rtl:maxmd:mr-0 ltr:ml-16 ltr:maxmd:ml-0 grow ">
+                <div class="links flex flex-col justify-between h-full maxmd:flex-col">
+                  <div class="top-links flex justify-between maxmd:flex-col">
+                    <div>
+                      <h1 class="text-2xl text-mainColor font-bold mb-3">روابط سريعة</h1>
+                      <ul class="flex ">
+                        <li><a class="block rtl:ml-4 ltr:mr-4 text-[#3f3f3f] font-medium text-lg maxmd:text-sm" href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a class="block rtl:ml-4 ltr:mr-4 text-[#3f3f3f] font-medium text-lg maxmd:text-sm" href="about.html">عن المشروع</a></li>
+                        <li><a class="block rtl:ml-4 ltr:mr-4 text-[#3f3f3f] font-medium text-lg maxmd:text-sm" href="contactus.html">تواصل معنا</a></li>
+                      </ul>
+                    </div>
+                    <div class="logo3 w-[210px] maxmd:mx-auto maxmd:my-6"><img src="img/logo3.svg" alt="alt"></div>
+                  </div>
+                  <div class="bootom-links">
+                    <h1 class="text-2xl text-mainColor font-bold mb-3">تواصل معنا </h1>
+                    <ul class="flex justify-between w-[95%] maxmd:flex-col">
+                      <li class="maxmd:mb-3 flex items-center"><i class="fa-regular fa-map w-11 h-11 maxmd:w-8 maxmd:h-8 maxmd:text-sm text-white bg-mainColor flex items-center justify-center rounded-lg text-xl rtl:ml-3 ltr:mr-3"></i> <span class="text-[#3f3f3f] text-xl whitespace-nowrap maxmd:text-sm">المملكة العربية السعودية - الرياض</span> </li>
+                      <li class="maxmd:mb-3 "><a class="flex items-center  maxmd:w-fit" href="tel:0990854475454">  <i class="fa-solid fa-mobile-screen-button w-11 h-11 maxmd:w-8 maxmd:h-8 maxmd:text-sm text-white bg-mainColor flex items-center justify-center rounded-lg text-xl rtl:ml-3 ltr:mr-3"></i> <span class="text-[#3f3f3f] text-xl whitespace-nowrap maxmd:text-sm">0990854475454</span> </a></li>
+                      <li class="maxmd:mb-3 "><a class="flex items-center maxmd:w-fit" href="mailto:info@ge-enviro.com">  <i class="fa-regular fa-envelope w-11 h-11 maxmd:w-8 maxmd:h-8 maxmd:text-sm text-white bg-mainColor flex items-center justify-center rounded-lg text-xl rtl:ml-3 ltr:mr-3"></i> <span class="text-[#3f3f3f] text-xl whitespace-nowrap maxmd:text-sm">info@ge-enviro.com</span> </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bootom flex items-center justify-between maxmd:flex-wrap">
+            <h1 class="font-bold text-lg text-[#101010] maxmd:text-base">جمبع الحقوق محفوظة </h1><a class="text-black/60 " href="policy.html">الشروط والأحكام</a>
+            <div class="flex items-center justify-between pb-4 maxmd:mt-4"><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-whatsapp"></i></a><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-twitter"></i></a><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-facebook"></i></a><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-linkedin"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </footer><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

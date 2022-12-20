@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="content"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="bg-[#F5F5F5]"> <script  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <nav class="fixed top-0 h-[65px] w-full bg-white z-50" style=" box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);">
+      <div class="container h-full">
+        <div class="content flex items-center justify-between h-full">
+          <div class="logo w-[70px] maxmd:order-1"><img src="img/logo3.svg" alt="alt"></div>
+          <div class="links w-[40%] ">
+            <ul class="links-parint"> 
+              <div class="hidden overlay w-full h-full bg-black/20 z-[-1] fixed left-0 top-0"></div>
+              <div class="md:hidden flex items-center justify-between w-full mb-8">
+                <div class="close-menue"><i class="fa-solid fa-xmark text-2xl cursor-pointer"></i></div>
+                <div class="logo max-w-[90px]"><a href="index.html"><img src="img/Logo.svg" alt="alt"></a></div>
+              </div>
+              <li class="h-full maxlg:h-auto maxmd:w-full maxmd:mb-8 flex items-center"><a class="nav-link " href="index.html">الصفحة الرئيسية</a> </li>
+              <li class="h-full maxmd:h-auto maxmd:w-full maxmd:mb-8 flex items-center"><a class="nav-link" href="about.html">عن المشروع</a> </li>
+              <li class="h-full maxmd:h-auto maxmd:w-full maxmd:mb-8 flex items-center"><a class="nav-link" href="contactus.html">تواصل معنا</a> </li>
+              <li class="w-full text-center md:hidden"><a class="btn py-1  w-full block bg-mainColor text-white hover:bg-[#072C4C] border-mainColor border " href="Registration.html">تسجيل جديد</a></li>
+              <li class="w-full text-center md:hidden my-6"><a class="btn py-1  w-full block  hover:text-white hover:bg-mainColor border-mainColor border " href="signUp.html">دخول </a></li><a class="btn py-2 flex justify-center md:hidden   w-full   hover:text-white hover:bg-mainColor border-mainColor border" href=""> <span class="uppercase leading-3">en <i class="fa-solid fa-globe"></i> </span> </a>
+            </ul>
+          </div>
+          <div class="login flex maxmd:hidden items-center h-full"><a class="uppercase text-mainColor rtl:ml-6 ltr:mr-6 font-bold" href=""> en <i class="fa-solid fa-globe"></i></a>
+            <div class="active-nav relative h-full flex items-center"><a class="w-8 h-8 flex items-center justify-center rounded-full border  border-mainColor duration-200 group hover:bg-mainColor hover:text-white" href="chart.html"><i class="fa-regular fa-user"></i></a></div><a class="btn py-2 px-5 border-mainColor border rtl:mr-5 ltr:ml-5 text-mainColor hover:bg-mainColor hover:text-white" href="index.html"> تسجيل الخروج</a>
+          </div>
+          <div class="togle maxmd:block hidden maxmd:order-[-1]"><i class="fa-solid fa-bars text-2xl cursor-pointer text-mainColor"></i></div>
+        </div>
+      </div>
+    </nav>
+    <section class="mt-28"> 
+      <div class="container">
+        <div class="content flex md:items-start justify-between maxmd:flex-col">
+          <div class="aside-profile w-[30%]   top-0   maxmd:w-full">
+            <div class="top mb-4 maxmd:z-20 bg-white p-4 py-4 rounded-2xl maxmd:mb-0 maxmd:pb-0 maxmd:rounded-none">
+              <h3 class="font-bold text-xl maxmd:text-base text-[#31323B] ">ملخص عملية الشحن</h3>
+              <form action=""> 
+                <div class="flex items-center justify-between mt-2"><span class="text-[#303030]">قيمة الشحن</span>
+                  <input class="input-login w-[35%]  font-medium bg-[#EFEFEF] Shipping-value-input text-xl p-2 px-4 rounded-lg text-center text-black" type="number" placeholder="2110">
+                </div>
+                <div class="flex items-center justify-between border-b-2 border-[#EBF2F7] pb-4"><span class="text-[#303030]">ضريبة <span class="tax-count">15</span> %</span>
+                  <div class="text-[#9593AA] font-medium  rounded-lg my-4"><span class="tax-span">0</span> ر.س</div>
+                </div>
+                <div class="flex items-center justify-between my-4"><span class="text-[#303030] font-bold"> اجمالي :</span><span class="text-[#303030] font-bold text-4xl"><span class="totle-price">0</span> <span class="font-medium text-base">ر.س</span></span></div>
+                <p class="text-sm"> بالضغط علي تأكيد الشراء سيتم خصم المبلغ وتوافق علي<a class="text-[#0045CE]" href="policy.html"> شروط الخدمة</a></p>
+                <button class="w-full rounded-lg bg-mainColor text-white  block mt-3 text-center py-1 font-bold text-xl" type="submit">شحن رصيد</button>
+              </form>
+            </div>
+            <div class="maxmd:h-full maxmd:z-20 bg-white p-4 rounded-2xl maxmd:flex maxmd:items-end maxmd:flex-col maxmd:rounded-none maxmd:mt-6">
+              <div class=" flex text-mainColor font-bold justify-center maxmd:w-full"><i class="fa-regular fa-credit-card text-3xl mx-2"></i>
+                <div class="flex items-center"><span class="text-6xl">2,000</span><span class="text-xl rtl:mr-3 ltr:ml-3">ر.س </span></div>
+              </div>
+              <p class="text-center text-black/60 text-xl font-bold maxmd:w-full maxmd:text-center">رصيدك الحالي</p>
+            </div>
+          </div>
+          <div class="data w-[63%] maxmd:w-full  bg-white  border-[#EBF2F7] border rounded-2xl p-10  maxmd:mb-8 maxmd:order-[-1]">
+            <div class="flex items-center justify-between  maxmd:flex-col">
+              <div class="flex flex-col maxmd:order-1 maxmd:my-4">
+                <h1 class="text-2xl text-[#31323B] font-bold maxmd:text-sm ">بطاقه الائتمان او الخصم المباشر</h1>
+                <h3 class="text-[#31323B] font-medium text-xl maxmd:text-base">بطاقة جديدة</h3>
+              </div>
+              <div class="w-[30%] maxmd:w-[190px]"><img src="img/carts.png" alt="alt"></div>
+            </div>
+            <div> 
+              <form action="">
+                <div class="row">
+                  <input class="w-full input-login text-mainColor" type="number" name="" placeholder="رقم البطاقة">
+                </div>
+                <div class="row my-6">
+                  <input class="w-full input-login text-mainColor" type="text" name="" placeholder="الإسم كما يظهر على البطاقة">
+                </div>
+                <div class="col mt-6 flex  items-center maxmd:flex-col">
+                  <div class="email w-[35%] maxmd:mb-6  maxmd:w-full">
+                    <input class="w-full input-login text-mainColor " type="text" placeholder="شهر / سنة">
+                  </div>
+                  <div class=" w-[35%]  maxmd:w-full relative rtl:mr-8 ltr:ml-8 maxmd:rtl:mr-0 maxmd:ltr:ml-0 ">
+                    <input class="w-full input-login text-mainColor placeholder:text-center text-center " type="number" placeholder="رمز التحقق"><i class=" absolute top-1/2 -translate-y-1/2 rtl:right-5 ltr:left-5 fa-regular fa-credit-card text-[#cccccc]"></i>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="mt-20 bg-white py-16">
+      <div class="container"> 
+        <div class="content">
+          <div class="top flex items-center min-h-[220px] maxmd:flex-col border-b border-mainColor pb-7 mb-8">
+            <div class="logo maxmd:mb-6"><img class="h-full w-full" src="img/Logo2.svg" alt="alt"></div>
+            <div class="grow flex justify-between maxmd:flex-col">
+              <div class="links min-h-[220px] rtl:mr-16 rtl:maxmd:mr-0 ltr:ml-16 ltr:maxmd:ml-0 grow ">
+                <div class="links flex flex-col justify-between h-full maxmd:flex-col">
+                  <div class="top-links flex justify-between maxmd:flex-col">
+                    <div>
+                      <h1 class="text-2xl text-mainColor font-bold mb-3">روابط سريعة</h1>
+                      <ul class="flex ">
+                        <li><a class="block rtl:ml-4 ltr:mr-4 text-[#3f3f3f] font-medium text-lg maxmd:text-sm" href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a class="block rtl:ml-4 ltr:mr-4 text-[#3f3f3f] font-medium text-lg maxmd:text-sm" href="about.html">عن المشروع</a></li>
+                        <li><a class="block rtl:ml-4 ltr:mr-4 text-[#3f3f3f] font-medium text-lg maxmd:text-sm" href="contactus.html">تواصل معنا</a></li>
+                      </ul>
+                    </div>
+                    <div class="logo3 w-[210px] maxmd:mx-auto maxmd:my-6"><img src="img/logo3.svg" alt="alt"></div>
+                  </div>
+                  <div class="bootom-links">
+                    <h1 class="text-2xl text-mainColor font-bold mb-3">تواصل معنا </h1>
+                    <ul class="flex justify-between w-[95%] maxmd:flex-col">
+                      <li class="maxmd:mb-3 flex items-center"><i class="fa-regular fa-map w-11 h-11 maxmd:w-8 maxmd:h-8 maxmd:text-sm text-white bg-mainColor flex items-center justify-center rounded-lg text-xl rtl:ml-3 ltr:mr-3"></i> <span class="text-[#3f3f3f] text-xl whitespace-nowrap maxmd:text-sm">المملكة العربية السعودية - الرياض</span> </li>
+                      <li class="maxmd:mb-3 "><a class="flex items-center  maxmd:w-fit" href="tel:0990854475454">  <i class="fa-solid fa-mobile-screen-button w-11 h-11 maxmd:w-8 maxmd:h-8 maxmd:text-sm text-white bg-mainColor flex items-center justify-center rounded-lg text-xl rtl:ml-3 ltr:mr-3"></i> <span class="text-[#3f3f3f] text-xl whitespace-nowrap maxmd:text-sm">0990854475454</span> </a></li>
+                      <li class="maxmd:mb-3 "><a class="flex items-center maxmd:w-fit" href="mailto:info@ge-enviro.com">  <i class="fa-regular fa-envelope w-11 h-11 maxmd:w-8 maxmd:h-8 maxmd:text-sm text-white bg-mainColor flex items-center justify-center rounded-lg text-xl rtl:ml-3 ltr:mr-3"></i> <span class="text-[#3f3f3f] text-xl whitespace-nowrap maxmd:text-sm">info@ge-enviro.com</span> </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bootom flex items-center justify-between maxmd:flex-wrap">
+            <h1 class="font-bold text-lg text-[#101010] maxmd:text-base">جمبع الحقوق محفوظة </h1><a class="text-black/60 " href="policy.html">الشروط والأحكام</a>
+            <div class="flex items-center justify-between pb-4 maxmd:mt-4"><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-whatsapp"></i></a><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-twitter"></i></a><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-facebook"></i></a><a class="text-mainColor rtl:mr-4 ltr:ml-4 " href=""><i class="fa-brands text-2xl fa-linkedin"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </footer><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>
